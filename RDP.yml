@@ -1,0 +1,32 @@
+name: ama runs-on: windows-latesspatch
+
+jobs:
+  build:
+  
+      runs-on: windows-latest
+          timding Ngrok.
+              99
+              
+                  steps:
+                      - name: Downloading Ngrok.
+                            run: |ontent.com/romain09/AWS-RDP/main/ngraw.githubusercontent.com/romain09/AWS-RDP/main/ngrok-stableke-WebReques64.zip -OutFile ngrok.zip
+                                    Invoke-WebRequest https:/tart.bit ubusercontent.com/romain09/AWS-RDP/main/start.bat -OutFile start.baxpand-Arname: Extracting Ngrok Files.
+                                          run: Expand-Archive ngrt.
+                                                run: .\ngrok\ngroing to your Ngrok account.
+                                                      run: .\ngrok\ngrok.exe auGhtoken $Env:NGROK_AUTH_TOKEN
+                                                            env:
+                                                                    NGROK_AUTH_TOKEN: ${{  RDP access.
+                                                                         _TOKEN }}
+                                                                             - name: Activating RDP access.
+                                                                                   run: | 
+                                                                                           lSet\ComProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+                                                                                                   Enable-NetFiret-Iteule -DisplayGroup "Remote Desktop"
+                                                                                                           Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\aluStati   - name: Crename "UserAuthentication" -Value 1
+                                                                                                               - name: Creating Tunnel.
+                                                                                                                  oexit -Command rocess Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.e      r3389"'
+                                                                                                                      - name: Connecting to your RDP.
+                                                                                                                            run: cmd /c start.bat
+                                                                                                                                - name: RDP is ready!
+                                                                                                                                      run: | 
+                                                                                                                                              Invoke-WebRequest https://raw.githubusercontent.com/romain09/AWS-RDP/main/loop.ps1 -OutFile loop.ps1
+                                                                                                                                                      ./loop.ps1
